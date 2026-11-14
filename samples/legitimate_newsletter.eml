@@ -1,0 +1,60 @@
+Return-Path: <bounces@news.example.org>
+Received: from out.news.example.org (out.news.example.org [198.51.100.10])
+	by mx.example.net (Postfix) with ESMTPS id 7A1B2C0001
+	for <reader@example.net>; Wed, 11 Nov 2026 09:00:04 +0000 (UTC)
+Authentication-Results: mx.example.net;
+	spf=pass (domain of news.example.org designates 198.51.100.10 as permitted sender) smtp.mailfrom=news.example.org;
+	dkim=pass header.d=example.org header.s=news2026;
+	dmarc=pass (p=quarantine) header.from=example.org
+DKIM-Signature: v=1; a=rsa-sha256; d=example.org; s=news2026; h=from:to:subject:date; bh=ZmFrZQ==; b=ZmFrZS1zaWduYXR1cmUtZm9yLWxhYg==
+From: "Example Weekly" <newsletter@example.org>
+Reply-To: editors@example.org
+To: reader@example.net
+Subject: Example Weekly #42: home lab tips and community news
+Date: Wed, 11 Nov 2026 09:00:00 +0000
+Message-ID: <weekly-42.20261111@news.example.org>
+List-Unsubscribe: <https://news.example.org/unsubscribe?id=42>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==BOUNDARY-NEWS-04=="
+
+--==BOUNDARY-NEWS-04==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hi Sam,
+
+Welcome to issue 42 of Example Weekly. This week:
+
+* Building a small home lab with a spare laptop
+  https://www.example.org/articles/home-lab-basics
+* Community spotlight: the network monitoring meetup
+  https://www.example.org/community/meetup-recap
+
+Thanks for reading, and see you next Wednesday.
+
+The Example Weekly editors
+
+You are receiving this because you subscribed at example.org.
+Manage your subscription: https://news.example.org/preferences
+
+--==BOUNDARY-NEWS-04==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body style="font-family: Georgia, serif;">
+    <p>Hi Sam,</p>
+    <p>Welcome to issue 42 of Example Weekly. This week:</p>
+    <ul>
+      <li><a href="https://www.example.org/articles/home-lab-basics">Building a small home lab with a spare laptop</a></li>
+      <li><a href="https://www.example.org/community/meetup-recap">Community spotlight: the network monitoring meetup</a></li>
+    </ul>
+    <p>Thanks for reading, and see you next Wednesday.</p>
+    <p>The Example Weekly editors</p>
+    <p style="font-size:12px;color:#666">You are receiving this because you subscribed at
+      <a href="https://www.example.org/">example.org</a>.
+      <a href="https://news.example.org/preferences">Manage your subscription</a></p>
+  </body>
+</html>
+
+--==BOUNDARY-NEWS-04==--

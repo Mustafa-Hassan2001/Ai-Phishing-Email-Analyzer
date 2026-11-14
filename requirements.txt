@@ -1,0 +1,7 @@
+# The analyzer package itself uses only the Python standard library.
+# These are for the web UI and the test suite.
+streamlit>=1.46   # web UI (pulls in pandas)
+pandas>=2.0       # tables in the UI
+pytest>=7.0       # test suite
+
+# Optional, installed separately: Ollama (https://ollama.com) for local AI explanations.

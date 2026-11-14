@@ -1,0 +1,43 @@
+Return-Path: <billing@invoices-portal.test>
+Received: from smtp.invoices-portal.test (unknown [203.0.113.77])
+	by mx.example.net (Postfix) with ESMTP id 9B7E2C0013
+	for <accounts@example.net>; Thu, 12 Nov 2026 16:02:11 +0000 (UTC)
+Authentication-Results: mx.example.net;
+	spf=softfail (domain of transitioning invoices-portal.test does not designate 203.0.113.77 as permitted sender) smtp.mailfrom=invoices-portal.test;
+	dkim=none;
+	dmarc=none header.from=invoices-portal.test
+From: "Accounts Department" <billing@invoices-portal.test>
+To: accounts@example.net
+Subject: Invoice INV-20931 - payment overdue
+Date: Thu, 12 Nov 2026 16:02:05 +0000
+Message-ID: <inv-20931.1605196925@invoices-portal.test>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="==BOUNDARY-INV-02=="
+
+--==BOUNDARY-INV-02==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Dear Customer,
+
+Please find attached invoice INV-20931. Our records show the outstanding
+balance of $4,812.00 is now overdue.
+
+To avoid late fees, review the invoice and complete the wire transfer
+as soon as possible. You can also view the invoice online:
+https://bit.ly/EXAMPLE-not-a-real-link
+
+Kind regards,
+Accounts Department
+
+[LAB SAMPLE - FAKE PHISHING EMAIL - THE ATTACHMENT IS A HARMLESS TEXT FILE]
+
+--==BOUNDARY-INV-02==
+Content-Type: application/octet-stream; name="Invoice_INV-20931.pdf.exe"
+Content-Disposition: attachment; filename="Invoice_INV-20931.pdf.exe"
+Content-Transfer-Encoding: base64
+
+VGhpcyBpcyBhIGhhcm1sZXNzIGR1bW15IGZpbGUgZm9yIGxhYiB0ZXN0aW5nLiBJdCBpcyBOT1Qg
+YW4gZXhlY3V0YWJsZSBhbmQgY29udGFpbnMgbm8gY29kZS4K
+
+--==BOUNDARY-INV-02==--

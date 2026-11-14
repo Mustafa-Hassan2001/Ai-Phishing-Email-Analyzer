@@ -1,0 +1,26 @@
+Return-Path: <it-helpdesk@mail-notify.example>
+Received: from relay.mail-notify.example (unknown [192.0.2.45])
+	by mx.example.net (Postfix) with ESMTP id 1C3D5C0077
+	for <employee@example.net>; Fri, 13 Nov 2026 06:41:30 +0000 (UTC)
+From: "Microsoft 365 Security" <it-helpdesk@mail-notify.example>
+To: employee@example.net
+Subject: Your password expires today
+Date: Fri, 13 Nov 2026 06:41:28 +0000
+Message-ID: <a81f-77c2-4410@mail-notify.example>
+MIME-Version: 1.0
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body style="font-family: Segoe UI, sans-serif;">
+    <h2>Password expiry notice</h2>
+    <p>Dear user,</p>
+    <p>Your mailbox password expires today. To keep your password and avoid
+       losing email, you must update your password immediately.</p>
+    <p>If you do not update it, your mailbox will be locked and you will lose access to
+       all messages.</p>
+    <p><a href="http://192.0.2.45/owa/auth/reset.aspx?user=employee">Keep my current password</a></p>
+    <p>Microsoft 365 Security</p>
+    <p style="color:#999">[LAB SAMPLE - FAKE PHISHING EMAIL - 192.0.2.0/24 IS A RESERVED DOCUMENTATION RANGE]</p>
+  </body>
+</html>

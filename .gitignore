@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+.DS_Store
+
+# Generated reports and batch summaries
+*_report.md
+*_report.json
+summary.csv
+
+# Never commit secrets or real suspicious mail
+.env
+.streamlit/secrets.toml
+real-samples/

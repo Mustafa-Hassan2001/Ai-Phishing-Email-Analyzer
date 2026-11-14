@@ -1,0 +1,7 @@
+# Keep the lab tool fully offline: no usage telemetry to Streamlit's servers.
+[browser]
+gatherUsageStats = false
+
+[server]
+# Matches MAX_UPLOAD_MB in app.py
+maxUploadSize = 10

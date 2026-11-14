@@ -1,0 +1,55 @@
+Return-Path: <bounce-7731@bulk-mailer.test>
+Received: from mail.bulk-mailer.test (unknown [198.51.100.23])
+	by mx.example.net (Postfix) with ESMTP id 4F2A1C0042
+	for <victim@example.net>; Fri, 13 Nov 2026 08:14:02 +0000 (UTC)
+Received: from localhost (localhost [127.0.0.1])
+	by mail.bulk-mailer.test with SMTP; Fri, 13 Nov 2026 08:14:00 +0000
+Authentication-Results: mx.example.net;
+	spf=fail (domain of bulk-mailer.test does not designate 198.51.100.23 as permitted sender) smtp.mailfrom=bulk-mailer.test;
+	dkim=none (message not signed);
+	dmarc=fail (p=reject) header.from=paypa1-security.example
+From: "PayPal Service" <service@paypa1-security.example>
+Reply-To: account-recovery@mailbox-helpdesk.example
+To: victim@example.net
+Subject: Urgent: Your account has been limited - action required
+Date: Fri, 13 Nov 2026 08:13:58 +0000
+Message-ID: <20261113081358.7731@paypa1-security.example>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==BOUNDARY-PP-01=="
+
+--==BOUNDARY-PP-01==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Dear Customer,
+
+We detected unusual activity on your account. Your account will be
+suspended within 24 hours unless you verify your identity.
+
+Please sign in and confirm your password immediately:
+http://paypa1-security.example/login/verify?session=8f2c
+
+If you do not act now, your account will be permanently deleted.
+
+PayPal Security Team
+
+[LAB SAMPLE - FAKE PHISHING EMAIL - ALL DOMAINS ARE RESERVED/FAKE]
+
+--==BOUNDARY-PP-01==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body style="font-family: Arial, sans-serif;">
+    <p>Dear Customer,</p>
+    <p>We detected <b>unusual activity</b> on your account. Your account will be
+       suspended <b>within 24 hours</b> unless you verify your identity.</p>
+    <p>Please sign in and confirm your password immediately:</p>
+    <p><a href="http://paypa1-security.example/login/verify?session=8f2c">https://www.paypal.com/signin</a></p>
+    <p>If you do not act now, your account will be permanently deleted.</p>
+    <p>PayPal Security Team</p>
+    <p style="color:#999">[LAB SAMPLE - FAKE PHISHING EMAIL - ALL DOMAINS ARE RESERVED/FAKE]</p>
+  </body>
+</html>
+
+--==BOUNDARY-PP-01==--
